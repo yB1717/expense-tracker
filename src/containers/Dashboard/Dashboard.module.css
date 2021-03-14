@@ -1,0 +1,40 @@
+.CardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Money{
+    /* border: 5px solid rgb(141, 141, 245) !important; */
+    flex: 2;
+    margin: 0 10px
+}
+
+.Transactions{
+    /* border: 5px solid rgb(141, 141, 245) !important; */
+    flex: 5;
+    margin: 0 10px;
+}
+
+.Transaction{
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+@media(max-width: 600px){
+    .CardContainer{
+        flex-direction: column;
+    }
+    .Money{
+        margin: 10px 0;
+        flex: 1;
+    }
+    .Transactions{
+        margin: 10px 0;
+        flex: 1;
+    }
+}
